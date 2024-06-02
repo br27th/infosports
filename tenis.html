@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginas.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="temaescuro.css">
+    <title>Tênis</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="logo" href="index.html">InfoSports</a>
+            <div class="headerBtnGroup">
+                <button class="navBtn"><a href="login.html">Login</a></button>
+                <button class="navBtn"><a href="registro.html">Registro</a></button>
+                <button class="navBtn"><a href="contato.html">Contato</a></button>
+                <div>
+                    <input type="checkbox" class="check" id="chk" />
+                
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="bola"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="hamburguer-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </header>
+        <p class="sectionTitle" id="backToTop">BEM VINDO A INFOSPORTS!</p>
+        <p class="sectionDescription">Aqui é onde você encontra todos os itens mais novos e modernos do seu esporte
+            preferido.</p>
+        <section class="gridContainer">
+            <div class="mainContent">
+                <div class="categoryCard">
+                    <img src="data:image/jpeg;base64,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" alt="mainCardImg" class="mainCardImg">
+                    <h1 class="mainCategoryCardTitle">Tênis</h1>
+                    <p class="mainCategoryCardDescription" Align="justify">O tênis é um esporte praticado
+                        individualmente ou em duplas, onde os jogadores utilizam raquetes para rebater uma bola
+                        sobre uma quadra dividida ao meio por uma rede. Com raízes que remontam ao século XII na França,
+                        o tênis moderno evoluiu
+                        ao longo dos séculos para se tornar uma das atividades esportivas mais populares em todo o
+                        mundo.
+
+                        O objetivo do jogo é fazer com que a bola passe sobre a rede e caia dentro das linhas da quadra
+                        do adversário, ao mesmo
+                        tempo em que se evita que a bola rebatida pelo oponente alcance o chão dentro das próprias
+                        linhas. Isso requer uma
+                        combinação de habilidade, técnica, agilidade e estratégia.
+
+                        O tênis é praticado em diferentes superfícies, como grama, saibro, quadras duras e carpetes,
+                        cada uma com suas próprias
+                        características e desafios. As partidas podem ser disputadas em uma variedade de formatos, desde
+                        jogos individuais
+                        simples até torneios de grande escala, como os Grand Slam.
+
+                        Além de ser uma competição esportiva emocionante, o tênis oferece uma série de benefícios
+                        físicos e mentais para os
+                        praticantes. Ele ajuda a melhorar a coordenação motora, a resistência cardiovascular, a força
+                        muscular e a agilidade.
+                        Além disso, promove a socialização, o trabalho em equipe (no caso de partidas de duplas) e o
+                        desenvolvimento de
+                        habilidades mentais, como concentração, disciplina e estratégia.
+
+                        O tênis é um esporte acessível para pessoas de todas as idades e níveis de habilidade, podendo
+                        ser praticado
+                        recreativamente em clubes locais ou de forma mais competitiva em torneios profissionais. Com sua
+                        combinação única de
+                        desafio físico, mental e social, o tênis continua a atrair milhões de praticantes em todo o
+                        mundo.</p>
+                </div>
+
+
+        </section>
+        <footer class="footer">
+            <span>Info Sports</span>
+            <a href="#backToTop" class="footerAnchor">VOLTAR PARA O TOPO</a>
+        </footer>
+    </div>
+    <script src="scripts/temaescuro.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

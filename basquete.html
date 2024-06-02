@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginas.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="temaescuro.css">
+    <title>Basquete</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="logo" href="index.html">InfoSports</a>
+            <div class="headerBtnGroup">
+                <button class="navBtn"><a href="login.html">Login</a></button>
+                <button class="navBtn"><a href="registro.html">Registro</a></button>
+                <button class="navBtn"><a href="contato.html">Contato</a></button>
+                <div>
+                    <input type="checkbox" class="check" id="chk" />
+                
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="bola"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="hamburguer-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </header>
+        <p class="sectionTitle" id="backToTop">BEM VINDO A INFOSPORTS!</p>
+        <p class="sectionDescription">Aqui é onde você encontra todos os itens mais novos e modernos do seu esporte
+            preferido.</p>
+        <section class="gridContainer">
+            <div class="mainContent">
+                <div class="categoryCard">
+                    <img src="data:image/jpeg;base64,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" alt="mainCardImg" class="mainCardImg">
+                    <h1 class="mainCategoryCardTitle">Basquete</h1>
+                    <p class="mainCategoryCardDescription" Align="justify">O basquete é um esporte de equipe dinâmico e
+                        emocionante, jogado entre duas equipes de cinco jogadores cada, que buscam
+                        marcar pontos arremessando uma bola em uma cesta localizada no final de uma quadra. Originário
+                        dos Estados Unidos no
+                        final do século XIX, o basquete rapidamente se tornou um dos esportes mais populares do mundo.
+
+                        O objetivo do jogo é marcar pontos arremessando a bola através da cesta do adversário, enquanto
+                        se defende contra os
+                        ataques da equipe oponente. Os jogadores podem avançar pela quadra driblando a bola ou
+                        passando-a entre os companheiros
+                        de equipe. Estratégia, habilidade, agilidade e trabalho em equipe são fundamentais para o
+                        sucesso no basquete.
+
+                        As partidas são divididas em quartos (ou períodos), com duração determinada, e a equipe com mais
+                        pontos ao final do jogo
+                        é declarada vencedora. Durante o jogo, os jogadores competem por rebotes, roubos de bola e
+                        bloqueios, enquanto tentam
+                        superar a defesa adversária para marcar pontos.
+
+                        O basquete é conhecido por sua atmosfera vibrante e competitiva, tanto em níveis amadores quanto
+                        profissionais. Ligas
+                        profissionais, como a NBA (National Basketball Association) nos Estados Unidos, atraem milhões
+                        de fãs em todo o mundo e
+                        apresentam alguns dos melhores talentos do esporte.
+
+                        Além de ser um esporte emocionante de assistir e jogar, o basquete oferece uma série de
+                        benefícios para a saúde,
+                        incluindo melhoria da aptidão cardiovascular, desenvolvimento da coordenação e agilidade, e
+                        fortalecimento muscular. É
+                        também uma ótima maneira de construir amizades, desenvolver habilidades sociais e aprender
+                        lições valiosas sobre
+                        trabalho em equipe e resiliência.
+
+                        Em resumo, o basquete é muito mais do que apenas um jogo; é uma paixão compartilhada por milhões
+                        de pessoas em todo o
+                        mundo, que valorizam a competição, camaradagem e a emoção de ver uma bola passar pela rede.</p>
+                </div>
+
+
+        </section>
+        <footer class="footer">
+            <span>Info Sports</span>
+            <a href="#backToTop" class="footerAnchor">VOLTAR PARA O TOPO</a>
+        </footer>
+    </div>
+    <script src="scripts/temaescuro.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginas.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="temaescuro.css">
+    <title>Surf</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="logo" href="index.html">InfoSports</a>
+            <div class="headerBtnGroup">
+                <button class="navBtn"><a href="login.html">Login</a></button>
+                <button class="navBtn"><a href="registro.html">Registro</a></button>
+                <button class="navBtn"><a href="contato.html">Contato</a></button>
+                <div>
+                    <input type="checkbox" class="check" id="chk" />
+                
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="bola"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="hamburguer-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </header>
+        <p class="sectionTitle" id="backToTop">BEM VINDO A INFOSPORTS!</p>
+        <p class="sectionDescription">Aqui é onde você encontra todos os itens mais novos e modernos do seu esporte
+            preferido.</p>
+        <section class="gridContainer">
+            <div class="mainContent">
+                <div class="categoryCard">
+                    <img src="data:image/jpeg;base64,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" alt="mainCardImg" class="mainCardImg">
+                    <h1 class="mainCategoryCardTitle">Surf</h1>
+                    <p class="mainCategoryCardDescription" Align="justify">O surf é um esporte aquático praticado em
+                        pranchas de surf, onde os surfistas deslizam sobre as ondas do mar,
+                        aproveitando a energia e a força da água para realizar manobras emocionantes. Originário das
+                        antigas culturas
+                        polinésias, o surf moderno evoluiu ao longo dos séculos para se tornar uma atividade de lazer,
+                        competição e estilo de
+                        vida em todo o mundo.
+
+                        Os surfistas enfrentam desafios únicos ao tentar se equilibrar e pegar as ondas, requerendo
+                        habilidades de equilíbrio,
+                        coordenação e força física. Eles buscam ondas de diferentes tamanhos e formas, dependendo de seu
+                        nível de habilidade e
+                        preferências pessoais.
+
+                        Além de ser um esporte emocionante, o surf oferece uma conexão profunda com a natureza e uma
+                        sensação de liberdade ao
+                        deslizar sobre as ondas. Muitos surfistas encontram na prática uma forma de relaxamento,
+                        meditação e escape do estresse
+                        da vida cotidiana.
+
+                        O surf também é uma forma de expressão artística e cultural, com sua própria linguagem, estilo e
+                        comunidade global. É
+                        comum encontrar festivais de surf, competições profissionais e uma variedade de marcas e
+                        produtos relacionados ao estilo
+                        de vida surfista.
+
+                        Além disso, o surf promove a saúde e o bem-estar físico, pois oferece um excelente exercício
+                        cardiovascular, melhora o
+                        equilíbrio e fortalece os músculos centrais e das extremidades. Também desafia a mente, exigindo
+                        concentração, tomada de
+                        decisões rápidas e resiliência diante de condições variáveis do mar.
+
+                        Em resumo, o surf é muito mais do que um esporte; é uma paixão, uma cultura e um estilo de vida
+                        que atrai pessoas de
+                        todas as idades e origens. Com sua combinação única de desafio, aventura e conexão com a
+                        natureza, o surf continua a
+                        cativar e inspirar surfistas em todo o mundo.</p>
+                </div>
+
+
+        </section>
+        <footer class="footer">
+            <span>Info Sports</span>
+            <a href="#backToTop" class="footerAnchor">VOLTAR PARA O TOPO</a>
+        </footer>
+    </div>
+    <script src="scripts/temaescuro.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
